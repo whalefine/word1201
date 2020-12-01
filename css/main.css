@@ -31,7 +31,7 @@
 .himg img{
     height: auto;
     width: 100%;
-    /* top:75%; */
+    top:75%;
 }
 
 } /*min-width:768px*/

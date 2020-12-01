@@ -56,9 +56,12 @@ function imgRecord(HTML_content,img_size){//記錄按過哪張圖片
 
 function showList(){
     let str="";
-    if(!row_record.textcontent) str= '<p style="font-size:36px;">目前沒有紀錄哦!</p>';
-    for(let i=data.length-1;i>=0;i--){
-        str += `<div class="${data[i].size_class}"><a href="#"><img src="${data[i].content}" alt=""></a></div>`;   
+    console.log(localStorage.img);
+    if(!localStorage.img) str= '<p style="font-size:36px;">目前沒有紀錄哦!</p>';
+    else{
+        for(let i=data.length-1;i>=0;i--){
+            str += `<div class="${data[i].size_class}"><a href="#"><img src="${data[i].content}" alt=""></a></div>`;   
+        }
     }
     row_record.innerHTML = str;
 
