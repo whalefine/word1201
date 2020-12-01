@@ -5,7 +5,8 @@ const row_record = document.querySelector('.row_record')
 
 const data = JSON.parse(localStorage.getItem('img')) || [];
 
-window.onload = function(){ 
+window.onload = function(e){ 
+    console.log(e);
     showList();
 };
 

@@ -1,0 +1,26 @@
+.index_row{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:start;
+}
+.index_row .item{
+    max-width: 40%;
+    margin-right:20px;
+    margin-bottom:32px;
+}
+.index_row img{
+    width: 100%;
+    vertical-align: middle;
+}
+
+.index_row p{
+    height: 55px;
+    line-height: 50px;
+    font-size:1em;
+    text-align:left;
+}
+@media screen and (max-width:768px){
+    .index_row .item{
+        max-width: 100%;
+    }
+}

@@ -23,8 +23,12 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Maven+Pro&family=Yanone+Kaffeesatz:wght@500&display=swap');
 body {
 	line-height: 1;
+	font-family: 'Bangers', cursive;
+font-family: 'Maven Pro', sans-serif;
+font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 ol, ul {
 	list-style: none;
