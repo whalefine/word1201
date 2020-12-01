@@ -11,7 +11,7 @@ window.onload = function(){
 
 row.addEventListener('click',function(e){//點開圖片
     console.log(e);
-    if(document.body.clientWidth <= 768) return;
+    // if(document.body.clientWidth <= 768) return; //螢幕小於768
     if(e.target.nodeName === "IMG"){
         lightbox.style.display = 'block';
         lightbox.innerHTML = e.target.outerHTML;

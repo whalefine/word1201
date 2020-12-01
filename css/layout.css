@@ -142,5 +142,8 @@ header{
         background-color: #bcb8b1;
     }
 
-
+    .lightbox img{
+        max-width: 94%;
+        max-height: 65%;
+    }
 }
