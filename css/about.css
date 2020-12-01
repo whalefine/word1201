@@ -1,0 +1,26 @@
+.headicon{
+    position: relative;
+    border-radius: 50%;
+    max-width: 300px;
+    padding-top:20px;
+}
+.intruduce{
+    max-width: 1000px;
+    padding:25px;
+}
+.headicon img{
+    width: 100%;
+    
+    
+}
+.content{
+    font-size:20px;
+    line-height:30px;
+}
+@media screen and (max-width:800px){
+    
+    .headicon{
+        
+        max-width: 800px;
+    }
+}

@@ -1,0 +1,59 @@
+@media screen and (min-width:769px){
+.row{
+    display:grid;
+    width: 100%;
+    /* grid-auto-columns:1fr 1fr 1fr; */
+    grid-template-columns:repeat(auto-fit,minmax(320px,375px));
+    grid-auto-rows: 320px;
+    grid-gap:10px;
+}
+.item{
+    overflow: hidden;                   /*隱藏超出外框的圖片*/
+    position: relative;                 /*圖片置中*/
+    cursor:pointer;
+
+}
+.item img{
+    position: absolute;                 /*圖片置中*/
+    top: 50%; left: 50%;                /*圖片置中*/
+    transform: translate(-50%, -50%);   /*圖片置中*/
+    transition: all .3s 0s ease-out;
+    /* vertical-align: middle; */
+}
+.item img:hover{
+    opacity: .7;
+}
+.wimg img{
+    width: auto;
+    height: 100%;
+    
+}
+.himg img{
+    height: auto;
+    width: 100%;
+    top:75%;
+}
+
+} /*min-width:768px*/
+@media screen and (max-width:768px){
+    .row{
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+    }
+    .item{
+        margin-bottom:20px;
+    }
+    .item img{
+        width: 100%;
+        
+    }
+}
+
+@media screen and (max-width:1024px){
+    .row{
+        grid-template-columns:1fr;
+        grid-auto-rows:500px;
+    }
+}
