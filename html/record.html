@@ -10,12 +10,10 @@
     <title>攝影作品集</title>
 </head>
 <body>
-    <div class="lightbox"> <!--放大圖片-->
-        <div class="lightboxImg"></div>
-    </div>
-
-    <input type="checkbox" name="" id="menu_control"><!--手機板menu-->
-    <ul class="menu2">
+    <label for="menu_control" class="menu_btn">MENU</label><!--手機板menu按鈕-->
+    <div class="lightbox"></div> <!--放大圖片-->
+    <input type="checkbox" name="" id="menu_control"><!--手機板control-->
+    <ul class="menu2"><!--手機板menu按鈕-->
         <li class="box2"><a href="new.html">New</a></li>
         <li class="box2"><a href="scenery.html">Scenery</a></li>
         <li class="box2"><a href="portrait.html">Portrait</a></li>
@@ -23,14 +21,13 @@
         <li class="box2"><a href="record.html">Record</a></li>
     </ul>
     
-    <div class="container">
-        <label for="menu_control" class="menu_btn">MENU</label>
-        <header>
+    <div class="container">  <!--內容、靠中間-->
+        <header>  <!--網頁menu-->
             <div class="logo">
                 <a href="index.html"><img src="../img/logo.png" alt="" ></a>
             </div>
             
-            <ul class="menu">
+            <ul class="menu"><!--網頁板menu-->
                 <li class="box"><a href="new.html">New</a></li>
                 <li class="box"><a href="scenery.html">Scenery</a></li>
                 <li class="box"><a href="portrait.html">Portrait</a></li>
@@ -44,12 +41,11 @@
                     </ul>
                 </div>
             </ul>
-
         </header>
-        <div class="headerbox"></div>
-            <div class="content">
-                <div class="row_record row"></div>
-            </div>
+        <div class="headerbox"></div>   <!--撐開menu的區域-->
+        <div class="content">
+            <div class="row_record row"></div> <!--點過的記錄顯示在這裡面-->
+        </div>
     </div>
     <script type="text/javascript" src="../js/all.js"></script>
 </body>
