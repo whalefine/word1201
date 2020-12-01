@@ -17,7 +17,10 @@
     font-size:20px;
     line-height:30px;
 }
-@media screen and (max-width:800px){
+.intruduce p{
+    text-align: left;
+}
+@media screen and (max-width:768px){
     
     .headicon{
         

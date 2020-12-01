@@ -8,9 +8,6 @@ const data = JSON.parse(localStorage.getItem('img')) || [];
 window.onload = function(){ 
     showList();
 };
-window.onresize = function(){
-
-}
 
 row.addEventListener('click',function(e){//點開圖片
     console.log(e);
