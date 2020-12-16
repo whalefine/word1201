@@ -5,7 +5,6 @@
     grid-gap:10px;
 }
 .item{
-    /* max-width: 375px; */
     overflow: hidden;                   /*隱藏超出外框的圖片*/
     position: relative;                 /*圖片置中*/
     cursor:pointer;
@@ -14,7 +13,7 @@
     position: absolute;                 /*圖片置中*/
     top: 50%; left: 50%;                /*圖片置中*/
     transform: translate(-50%, -50%);   /*圖片置中*/
-    transition: all .3s 0s ease-out;
+   transition: all .3s 0s ease-out;
 }
 .item img:hover{
     opacity: .7;
@@ -34,8 +33,6 @@
     .row{
         display:flex;
         flex-direction: column;
-        /* justify-content:center; */
-        /* align-items:center; */
     }
     .item{
         margin-bottom:10px;

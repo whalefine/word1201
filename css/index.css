@@ -1,7 +1,7 @@
 .index_row{
     display:flex;
     flex-wrap:wrap;
-    justify-content:start;
+    justify-content:flex-start;
 }
 .index_row .item{
     max-width: 40%;
@@ -24,7 +24,13 @@
     opacity:.8;
 }
 @media screen and (max-width:768px){
+    .index_row{
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
     .index_row .item{
+        margin-right:0;
         max-width: 100%;
     }
 }
